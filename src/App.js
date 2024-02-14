@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import FunctionContextComponent from "./FunctionContextComponent";
+import { ThemeProvider } from "./ThemeContext";
+
+//this the context we create
+// export const ThemeContext = React.createContext();
 
 function App() {
+  //this is the state
+  // const [darkTheme, setDarkTheme] = useState(true);
+
+  // function toggleTheme() {
+  //   setDarkTheme((prevDarkTheme) => !prevDarkTheme);
+  // }
+
+  // return (
+  //   <>
+  //     {/* the value is global state accessible to all its descendants */}
+  //     <ThemeContext.Provider value={darkTheme}>
+  //       <button onClick={toggleTheme}>Toggle Theme</button>
+  //       <FunctionContextComponent />
+  //     </ThemeContext.Provider>
+  //   </>
+  // );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <FunctionContextComponent />
+    </ThemeProvider>
   );
 }
 
