@@ -1,6 +1,6 @@
 import React from "react";
-import FunctionContextComponent from "./FunctionContextComponent";
-import { ThemeProvider } from "./ThemeContext";
+import FunctionContextComponent from "./use_context/FunctionContextComponent";
+import { ThemeProvider } from "./use_context/ThemeContext";
 
 //this the context we create
 // export const ThemeContext = React.createContext();
