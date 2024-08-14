@@ -1,6 +1,7 @@
 import React from "react";
 import FunctionContextComponent from "./use_context/FunctionContextComponent";
 import { ThemeProvider } from "./use_context/ThemeContext";
+import Counter from "./use_state/Counter";
 
 //this the context we create
 // export const ThemeContext = React.createContext();
@@ -24,9 +25,10 @@ function App() {
   // );
 
   return (
-    <ThemeProvider>
-      <FunctionContextComponent />
-    </ThemeProvider>
+    // <ThemeProvider>
+    //   <FunctionContextComponent />
+    // </ThemeProvider>
+    <Counter/>
   );
 }
 
