@@ -2,6 +2,7 @@ import React from "react";
 import FunctionContextComponent from "./use_context/FunctionContextComponent";
 import { ThemeProvider } from "./use_context/ThemeContext";
 import Counter from "./use_state/Counter";
+import MockApiCall from "./use_effect/MockApiCall";
 
 //this the context we create
 // export const ThemeContext = React.createContext();
@@ -28,7 +29,10 @@ function App() {
     // <ThemeProvider>
     //   <FunctionContextComponent />
     // </ThemeProvider>
-    <Counter/>
+
+    // <Counter/>
+
+    <MockApiCall/>
   );
 }
 
