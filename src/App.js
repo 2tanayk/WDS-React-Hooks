@@ -3,6 +3,7 @@ import FunctionContextComponent from "./use_context/FunctionContextComponent";
 import { ThemeProvider } from "./use_context/ThemeContext";
 import Counter from "./use_state/Counter";
 import MockApiCall from "./use_effect/MockApiCall";
+import UseRefDemo from "./use_ref/UseRefDemo";
 
 //this the context we create
 // export const ThemeContext = React.createContext();
@@ -32,7 +33,9 @@ function App() {
 
     // <Counter/>
 
-    <MockApiCall/>
+    // <MockApiCall/>
+
+    <UseRefDemo/>
   );
 }
 
