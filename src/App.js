@@ -4,6 +4,7 @@ import { ThemeProvider } from "./use_context/ThemeContext";
 import Counter from "./use_state/Counter";
 import MockApiCall from "./use_effect/MockApiCall";
 import UseRefDemo from "./use_ref/UseRefDemo";
+import UseCallbackDemo from "./use_callback/UseCallbackDemo";
 
 //this the context we create
 // export const ThemeContext = React.createContext();
@@ -35,7 +36,9 @@ function App() {
 
     // <MockApiCall/>
 
-    <UseRefDemo/>
+    // <UseRefDemo/>
+
+    <UseCallbackDemo/>
   );
 }
 
